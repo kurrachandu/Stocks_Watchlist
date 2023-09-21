@@ -29,6 +29,7 @@ function Watchlist({ stocks }) {
   };
 
   return (
+    <div className="watchlist-container">
       <div className="full-container">
         <div className="left-container">
           
@@ -44,13 +45,8 @@ function Watchlist({ stocks }) {
                     onDragOver={(e) => handleDragOver(e, index)}
                     onDrop={(e) => handleDrop(e, index)}
                   >
-                    <div className='stock-info'>
                     <span className='stock-Name'>{stock.companyName}</span> 
-                    <span className='stock-type'>{stock.stockType}</span>
-                    </div>
-                    <div className='stock-value'>
-                      <span>{stock.stockValue}</span>
-                    </div>
+                    <span className='stock-type'>{stock.stockType}</span>{stock.stockValue}
                   </li>
                 ))}
               </ul>
@@ -58,9 +54,10 @@ function Watchlist({ stocks }) {
           </div>
         </div>
         <div className="right-container">
-          
+          {/* Right container (empty) */}
         </div>
       </div>
+    </div>
   );
 }
 
