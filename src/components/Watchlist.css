@@ -42,9 +42,9 @@
 }
 
 .watchlist-items li:hover {
-  background-color: #87CEEB; /* Light blue */
+  background-color: #87CEEB; 
   cursor: pointer;
-  transition: background-color 0.3s ease; /* Smooth transition */
+  transition: background-color 0.3s ease; 
 }
 
 .watchlist-items li[data-react-beautiful-dnd-draggable="true"]:hover {

@@ -1,9 +1,9 @@
 import React from 'react';
-import Watchlist from './Watchlist';
+import Watchlist from './components/Watchlist';
 // import './App.css';
 
 function App() {
-  const config = [
+  const stocks = [
     { companyName: 'TCS',stockType:"BSE", stockValue: '1500.32' },
     { companyName: 'Infosys', stockType:"NSE", stockValue: '1600.22' },
     { companyName: 'Tech Mahindra', stockType:"BSE", stockValue: '1200.28' },
@@ -16,7 +16,7 @@ function App() {
 
   return (
     <div className="App">
-        <Watchlist stocks={config} /> {/* Pass the config as props */}
+        <Watchlist stocks={stocks} /> {/* Pass the config as props */}
       
     </div>
   );
