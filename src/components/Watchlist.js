@@ -1,10 +1,13 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Watchlist.css';
 
 function Watchlist({ stocks }) {
   const [draggedItem, setDraggedItem] = useState(null);
   const [stockList, setStockList] = useState(stocks);
 
+  useEffect(()=>{
+      setStockList(stocks);
+    },[stocks])
   const handleDragStart = (e, item, index) => {
     setDraggedItem({ item, index });
   };
