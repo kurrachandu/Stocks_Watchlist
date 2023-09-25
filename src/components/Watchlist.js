@@ -7,7 +7,8 @@ function Watchlist({ stocks }) {
 
   useEffect(()=>{
       setStockList(stocks);
-    },[stocks])
+    },[stocks]);
+    
   const handleDragStart = (e, item, index) => {
     setDraggedItem({ item, index });
   };
